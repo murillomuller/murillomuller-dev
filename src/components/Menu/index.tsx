@@ -1,18 +1,27 @@
 import React, { ReactElement } from 'react'
 import { Link } from "react-router-dom";
 import HeaderMenu from './HeaderMenu';
+import { useTranslation } from "react-i18next";
 
+import flagBrazil from "../../assets/brazil_flag.png"
+import flagUsa from "../../assets/usa_flag.png"
 interface Props {
     
 }
 
 export default function Menu({}: Props): ReactElement {
+  const { t, i18n } = useTranslation('common');
+
     const onClick = (a: any) => {
         console.log('clicou'+ a);
         return false;
     }
     return (
         <div className='leftMenu'>
+          <div className='flags'>
+                <span onClick={() => i18n.changeLanguage('br')}><img src={flagBrazil} alt='flag-brazil' width='20px' /></span>
+                <span onClick={() => i18n.changeLanguage('en')}><img src={flagUsa} alt='flag-usa' width='20px' /></span>
+            </div>
             <HeaderMenu />
              <nav>
                <ul>

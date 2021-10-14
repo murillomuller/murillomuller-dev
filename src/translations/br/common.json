@@ -1,0 +1,50 @@
+{
+    "common": {
+        "current": "Atual"
+    },
+    "date": {
+        "months": {
+            "january": "Janeiro",
+            "june": "Junho",
+            "july": "Julho"
+        }
+    },
+    "profile": {
+        "role": "DESENVOLVEDOR FULLSTACK"
+    },
+    "sections": {
+        "about": {
+            "hi": "Olá",
+            "first": "Eu sou o Murillo, sou um desenvolvedor nascido em Londrina - PR. Sou formado em Ciência da Computação pelo UniCEUB, trabalho com desenvolvimento a mais de 8 anos e sou apaixonado por tecnologia.",
+            "second": "Desde pequeno sempre gostei de computador, e em uma de minhas pesquisas online encontrei a programação, um mundo totalmente novo. Então por conta própria com 14 anos resolvi aprender a programar e acabei descobrindo que era algo que me divertia muito mais do que jogos online.",
+            "third": "Sempre venho tentando me atualizar e buscar por novas tecnologias e me aventurando com desenvolvimento de projetos pessoais e no trabalho.",
+            "contactme": "Fale Comigo"
+        },
+        "experience": {
+            "title": "Experiência Profissional"
+        },
+        "techskills": {
+            "title": "Conhecimentos Técnicos",
+            "level": {
+                "basic": "Básico",
+                "intermediary": "Intermediário",
+                "advanced": "Avançado"
+            }
+        },
+        "academic": {
+            "title": "Formação Acadêmica",
+            "computerscience": "Ciência da Computação pelo {{university}}",
+            "graduation": "Graduação"
+        },
+        "language": {
+            "title": "Idiomas",
+            "portuguese": "Português",
+            "english": "Inglês",
+            "native": "Nativo",
+            "intermediary": "Intermediário"
+        },
+        "portfolio": {
+            "title": "Portfólio"
+        }
+    }
+}

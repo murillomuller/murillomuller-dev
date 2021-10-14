@@ -1,0 +1,50 @@
+{
+    "common": {
+        "current": "Current"
+    },
+    "date": {
+        "months": {
+            "january": "January",
+            "june": "June",
+            "july": "July"
+        }
+    },
+    "profile": {
+        "role": "FULLSTACK DEVELOPER"
+    },
+    "sections": {
+        "about": {
+            "hi": "Hi",
+            "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB, I work with development for about 8 years and I love technology.",
+            "second": "Since I was a child I love computer, and in one of my online researchs I found code development, It was a whole new world. So on my own when I was 14 I decided to learn code development, and I ended up discovering that coding was something I enjoyed a lot more than online games.",
+            "third": "I've always been trying to update myself with new technologies and venturing into personal and work projects.",
+            "contactme": "Contact Me"
+        },
+        "experience": {
+            "title": "Work Experience"
+        },
+        "techskills": {
+            "title": "Tech Skills",
+            "level": {
+                "basic": "Basic",
+                "intermediary": "Intermediary",
+                "advanced": "Advanced"
+            }
+        },
+        "academic": {
+            "title": "Education",
+            "computerscience": "Computer Science at {{university}}",
+            "graduation": "Graduation"
+        },
+        "language": {
+            "title": "Languages",
+            "portuguese": "Portuguese",
+            "english": "English",
+            "native": "Native",
+            "intermediary": "Intermediary"
+        },
+        "portfolio": {
+            "title": "Portfolio"
+        }
+    }
+}

@@ -100,7 +100,17 @@ a {
     top: 50px;
     width: 265px;
     position: fixed;
-    padding-top: 50px;
+    padding-top: 20px;
+    .flags {
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        span {
+            margin: 0 3px;
+        }
+    }
 }
 .rightContent {
     margin-top: 50px;
@@ -141,6 +151,7 @@ a {
         color: $primary-color;
         font-size: 12px;
     }
+   
 }
 
 .contacts {
