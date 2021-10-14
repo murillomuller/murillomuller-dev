@@ -1,0 +1,228 @@
+@media only screen and (max-width: 629px) {
+    body {
+        font-size: 1em;
+    }
+    h1 {
+        &.title {
+            margin-left: 10px;
+        }
+    }
+    .leftMenu {
+        background-color: $background-color;
+        display: flex;
+        width: 100%;
+        position: relative;
+        border-radius: 0;
+        padding: 40px 0;
+        top: 0px;
+    }
+    .rightContent {
+        margin-top: 0;
+        margin-bottom: 50px;
+        float: none;
+        max-width: 100%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0;
+        padding-top: 50px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+    }
+
+    .about {
+        margin: 1em;
+    }
+
+    .experience {
+        width: 100%;
+        .timeline {
+            left: 100px;
+        }
+        p {
+            &.xp::before {
+                left: 94px;
+            }
+            .title {
+                width: 80px;
+                padding-left: 10px;
+            }
+            .body {
+                max-width: 310px;
+            }
+        }
+    }
+
+    .techSkills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 100%;
+            max-width: 250px;
+        }
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 1170px)  {
+    body {
+        font-size: 0.8rem;
+    }
+    h1 {
+        &.title {
+            margin-left: 20px;
+        }
+    }
+    .leftMenu {
+        background-color: $background-color;
+        display: flex;
+        width: 30%;
+        min-width: 200px;
+        position: fixed;
+        float: left;
+        border-radius: 0;
+        padding: 0px;
+        top: 0px;
+        height: 100vh;
+    }
+    .rightContent {
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-left: 30%;
+        float: left;
+        max-width: 70%;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0;
+        padding-top: 50px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+    }
+
+    .about {
+        margin: 20px;
+    }
+
+    .experience {
+        width: 100%;
+        .timeline {
+            left: 190px;
+        }
+        p {
+            &.xp::before {
+                left: 184px;
+            }
+            .title {
+                width: 150px;
+                padding-left: 10px;
+            }
+            .body {
+                max-width: 330px;
+                h2 {
+                    font-size: 17px;
+                    &::after {
+                        content: "";
+                        background: $primary-color;
+                        border-radius: 25px;
+                        display: block;
+                        height: 3px;
+                        margin-top: 3px;
+                        width: 10px;
+                    }
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 630px) and (max-width: 770px)  {
+        .experience {
+            width: 100%;
+            .timeline {
+                left: 30%;
+            }
+            p {
+                &.xp::before {
+                    left: 28.8%;
+                }
+                .title {
+                    width: 15%;
+                    padding-left: 10%;
+                }
+                .body {
+                    max-width: 60%;
+                    h2 {
+                        font-size: 17px;
+                        &::after {
+                            content: "";
+                            background: $primary-color;
+                            border-radius: 25px;
+                            display: block;
+                            height: 3px;
+                            margin-top: 3px;
+                            width: 10px;
+                        }
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .techSkills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 10px;
+        ul {
+            flex: 1 1 40%;
+            margin: 10px;
+        }
+    }
+
+    .academic {
+        p {
+            margin: 10px 0px;
+            line-height: 1.6em;
+        }
+    }
+
+    .language {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        div {
+            p {
+                margin: 8px 0px;
+            }
+        }
+    }
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div {
+            flex: 1 1 40%;
+            margin: 20px;
+            width: 100%;
+            max-width: 250px;
+        }
+    }   
+}
+

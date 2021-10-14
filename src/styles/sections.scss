@@ -1,0 +1,217 @@
+.experience {
+    position: relative;
+    .timeline {
+        content: "";
+        background: $primary-color;
+        border-radius: 25px;
+        position: absolute;
+        top: 0px;
+        left: 220px;
+        display: block;
+        height: 100%;
+        width: 2px;
+    }
+    p {
+        position: relative;
+        &.xp::before {
+            content: "";
+            background: $background-darker-color;
+            border-radius: 25px;
+            border: 2px solid $primary-color;
+            position: absolute;
+            top: 5px;
+            left: 214px;
+            display: block;
+            height: 10px;
+            width: 10px;
+            z-index: 1;
+        }
+        &:first-child {
+            margin-top: 40px;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .title {
+            color: $gray-color;
+            font-size: 12px;
+            width: 200px;
+            padding-left: 20px;
+        }
+        .body {
+            max-width: 510px;
+            float: right;
+            h2 {
+                color: $text-color;
+                font-size: 20px;
+                margin: 0;
+                &::after {
+                    content: "";
+                    background: $primary-color;
+                    border-radius: 25px;
+                    display: block;
+                    height: 3px;
+                    margin-top: 1px;
+                    width: 10px;
+                }
+            }
+            p {
+                color: $text-secondary-color;
+                font-size: 12px;
+                padding-right: 20px;
+                line-height: 1.4em;
+            }
+        }
+    }
+}
+
+.techSkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            span {
+                font-size: 8px;
+                text-transform: uppercase;
+                position: relative;
+                float: right;
+            }
+            &::before {
+                content: "";
+                background: $primary-color;
+                border-radius: 25px;
+                display: block;
+                position: relative;
+                top: 35px;
+                height: 3px;
+                margin-top: 1px;
+                margin-bottom: 5px;
+                width: 0;
+            }
+            &.skill-10::before {
+                width: 10px;
+            }
+            &.skill-20::before {
+                width: 25px;
+            }
+            &.skill-30::before {
+                width: 45px;
+            }
+            &.skill-40::before {
+                width: 55px;
+            }
+            &.skill-50::before {
+                width: 75px;
+            }
+            &.skill-60::before {
+                width: 95px;
+            }
+            &.skill-70::before {
+                width: 100px;
+            }
+            &.skill-75::before {
+                width: 107px;
+            }
+            &.skill-80::before {
+                width: 115px;
+            }
+            &.skill-85::before {
+                width: 125px;
+            }
+            &.skill-90::before {
+                width: 135px;
+            }
+            &.skill-100::before {
+                width: 150px;
+            }
+            &::after {
+                content: "";
+                background: $background-dark-color;
+                border-radius: 25px;
+                display: block;
+                height: 3px;
+                margin-top: 1px;
+                margin-bottom: 5px;
+                width: 150px;
+            }
+        }
+    }
+}
+
+.academic {
+    padding: 10px 20px;
+    img {
+        border-radius: 20px;
+        float: left;
+        max-width: 100px;
+        margin-right: 20px;
+    }
+    h3 {
+        font-size: 18px;
+        margin: 0px;
+    }
+    p {
+        font-size: 13px;
+        margin: 0px 0px;
+        b {
+            color: $primary-color;
+        }
+    }
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    div {
+        margin-right: 60px;
+        h3 {
+            font-size: 18px;
+            margin: 0px;
+        }
+        p {
+            font-size: 13px;
+            margin: 0px 0px;
+            b {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    div {
+        width: 100%;
+        max-width: 230px;
+        img {
+            border-radius: 20px;
+        }
+        h3 {
+            margin: 0;
+            &::after {
+                content: "";
+                background: $primary-color;
+                border-radius: 25px;
+                display: block;
+                height: 3px;
+                margin-top: 2px;
+                width: 13px;
+            }
+        }
+        p {
+            color: $text-secondary-color;
+            font-size: 12px;
+            line-height: 1.6em;
+        }
+    }
+}

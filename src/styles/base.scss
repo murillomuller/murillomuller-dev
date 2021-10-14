@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,400&display=swap");
+$font-stack: "Poppins", sans-serif;
+$background-color: #222;
+$background-dark-color: #171717;
+$background-darker-color: #131313;
+
+$gray-color: #747474;
+$white-color: #fff;
+$primary-color: #da0037;
+$text-color: #ededed;
+$text-dark-color: #131313;
+$text-secondary-color: #afafaf;
+
+body {
+    font: 100% $font-stack;
+    font-size: 15px;
+    line-height: 1.75em;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $background-dark-color;
+    color: $text-color;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    &.title {
+        font-size: 22px;
+    }
+    &.title::after {
+        content: "";
+        background: $primary-color;
+        border-radius: 25px;
+        display: block;
+        height: 5px;
+        margin-top: 9px;
+        width: 30px;
+    }
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.button {
+    padding: 0.6em 1em;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    font-size: 14px;
+    color: $white-color;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        background-color: $primary-color;
+    }
+    &.secondary {
+        border: 2px solid $white-color;
+        background-color: transparent;
+    }
+    &.secondary:hover {
+        background-color: $white-color;
+        color: $text-dark-color;
+        border: 2px solid $white-color;
+    }
+}
+
+.separator {
+    content: "";
+    background: $background-color;
+    border-radius: 25px;
+    display: block;
+    height: 1px;
+    margin: 45px auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+.leftMenu {
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2em;
+    padding: 1em;
+    top: 50px;
+    width: 265px;
+    position: fixed;
+    padding-top: 50px;
+}
+.rightContent {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: right;
+    width: 815px;
+    flex-direction: column;
+    padding: 1em;
+    border-radius: 0.8em;
+    background-color: $background-darker-color;
+    padding-top: 50px;
+}
+
+.profileAvatar {
+    background-color: $primary-color;
+    border-bottom: 4px solid $primary-color;
+    border-right: 4px solid $primary-color;
+    border-left: 1px solid $primary-color;
+    border-radius: 300px;
+    height: auto;
+    max-height: 170px;
+    width: auto;
+    max-width: 170px;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white-color;
+    h3 {
+        line-height: normal;
+        margin: 30px 0 0 0;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    span {
+        color: $primary-color;
+        font-size: 12px;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+        font-size: 19px;
+        &.linkedin {
+            font-size: 21px;
+        }
+        margin: 3px 6px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: $white-color;
+        &:hover {
+            color: $primary-color;
+            margin-top: 0px;
+            margin-bottom: 6px;
+        }
+    }
+}
