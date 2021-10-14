@@ -13,8 +13,8 @@ export default function HeaderMenu({ }: Props): ReactElement {
             <h3>Murillo Müller</h3>
             <span>DESENVOLVEDOR FULLSTACK</span>
             <div className='contacts'>
-                <a href='https://github.com/murillomuller' target='_blank' className='github' ><FontAwesomeIcon icon={faGithub} /></a>
-                <a href='https://github.com/murillomuller' target='_blank' className='linkedin' ><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a href='https://github.com/murillomuller' target='_blank' className='github' rel='noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
+                <a href='https://www.linkedin.com/in/murillomuller/' target='_blank' className='linkedin' rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
         </div>
     )
