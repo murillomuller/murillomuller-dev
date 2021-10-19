@@ -14,14 +14,23 @@
     },
     "sections": {
         "about": {
+            "title": "About",
             "hi": "Hi",
             "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB, I work with development for about 8 years and I love technology.",
             "second": "Since I was a child I love computer, and in one of my online researchs I found code development, It was a whole new world. So on my own when I was 14 I decided to learn code development, and I ended up discovering that coding was something I enjoyed a lot more than online games.",
             "third": "I've always been trying to update myself with new technologies and venturing into personal and work projects.",
+            "downloadcv": "Download CV",
             "contactme": "Contact Me"
         },
         "experience": {
-            "title": "Work Experience"
+            "title": "Work Experience",
+            "inmetrics": "Senior Software Engineer, I work in frontend mobile team developing and improving a project to a Fintech from Brazil. Working mostly with React Native.",
+            "cassipleno": "Analyst, I worked in the mobile and in the architeture team, I participated in big projects of mobile apps development and development of rest apis. I mainly worked with React Native, React.JS, Java (Camel Spring Boot), 3Scale, Openshift.",
+            "cassijunior":  "Junior Analyst, I was from the sustainability team and architeture and I took part in big projects of reformulation in technology from CASSI, I worked with Openshift, RHSSO, 3Scale, Java(Camel Sprint Boot), .NET CORE, React.JS, React Native.",
+            "stefaniniintermediary": "Intermediary Developer, I worked as a third party employee in the marketing team of CASSI, helping to mantain the website and developing hotsites for the company, working with HTML, JS, CSS, Joomla.",
+            "stefaninibasic": "Basic Developer, I worked as a third party employee in the IT team of CASSI, in big projects inside the company using C#, Asp.NET MVC, HTML, CSS, Javascript.",
+            "cassiintern": "Trainee, at Caixa de Assistência dos Funcionários do Banco do Brasil. Helped in maintenance and developing of some systems C#, Asp.Net MVC, HTML, CSS, Javascript.",
+            "mundodaweb": "Take part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
         },
         "techskills": {
             "title": "Tech Skills",
@@ -44,7 +53,10 @@
             "intermediary": "Intermediary"
         },
         "portfolio": {
-            "title": "Portfolio"
+            "title": "Portfolio",
+            "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL",
+            "goobra": "App of construction management for a company from Brasilia - DF, planned with AdobeXD, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL.",
+            "7virtual": "Automated deploy system and management of aplications in any Linux server, developed using Python, NodeJS and MongoDB."
         }
     }
 }

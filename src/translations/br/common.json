@@ -14,14 +14,23 @@
     },
     "sections": {
         "about": {
+            "title": "Sobre",
             "hi": "Olá",
             "first": "Eu sou o Murillo, sou um desenvolvedor nascido em Londrina - PR. Sou formado em Ciência da Computação pelo UniCEUB, trabalho com desenvolvimento a mais de 8 anos e sou apaixonado por tecnologia.",
             "second": "Desde pequeno sempre gostei de computador, e em uma de minhas pesquisas online encontrei a programação, um mundo totalmente novo. Então por conta própria com 14 anos resolvi aprender a programar e acabei descobrindo que era algo que me divertia muito mais do que jogos online.",
             "third": "Sempre venho tentando me atualizar e buscar por novas tecnologias e me aventurando com desenvolvimento de projetos pessoais e no trabalho.",
+            "downloadcv": "Baixar Currículo",
             "contactme": "Fale Comigo"
         },
         "experience": {
-            "title": "Experiência Profissional"
+            "title": "Experiência Profissional",
+            "inmetrics": "Engenheiro de Software Sênior, atuo no time mobile frontend desenvolvimento e evoluindo em um projeto para uma Fintech. Trabalhando principalmente com React Native.",
+            "cassipleno": "Analista Pleno, atuei no time mobile e arquitetura, participando de grandes projetos de criação de aplicativo e desenvolvimento de apis. Trabalhei com React Native, React.JS, Java (Camel Spring Boot), 3Scale, Openshift.",
+            "cassijunior":  "Analista Júnior, atuei no time de sustentação e arquitetura participando de grandes projetos na estruturação de tecnologia da CASSI, trabalhei com Openshift, RHSSO, 3Scale, Java(Camel Sprint Boot), .NET CORE, React.JS, React Native.",
+            "stefaniniintermediary": "Programador Intermediário, atuei como terceirizado dentro do time de Marketing da CASSI, ajudando a manter o website e criando hotsites para a empresa, trabalhando com HTML, JS, CSS, Joomla.",
+            "stefaninibasic": "Programador Básico, atuei como terceirizado dentro do time de TI da CASSI, em projetos grandes dentro da empresa utilizando C#, Asp.NET MVC, HTML, CSS, Javascript.",
+            "cassiintern": "Estagiário, atuei na Caixa de Assistência dos Funcionários do Banco do Brasil. Lá auxiliei na manutenção e desenvolvimento de alguns sistemas C#, Asp.Net MVC, HTML, CSS, Javascript.",
+            "mundodaweb": "Atuei como Colaborador em um projeto de reformulação do website de Geotecnia da UNB - Universidade de Brasília, e também atuei na parte de manutenção de websites."
         },
         "techskills": {
             "title": "Conhecimentos Técnicos",
@@ -44,7 +53,10 @@
             "intermediary": "Intermediário"
         },
         "portfolio": {
-            "title": "Portfólio"
+            "title": "Portfólio",
+            "purple": "Aplicativo de cartão fidelidade para uma empresa de Brasília - DF, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "goobra": "Aplicativo de gestão de obras para uma empresa de Brasília - DF, planejado com AdobeXD, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "7virtual": "Sistema de deploy automatizado e gestão de aplicações em qualquer servidor linux, desenvolvido utilizando Python, NodeJS e MongoDB."
         }
     }
 }

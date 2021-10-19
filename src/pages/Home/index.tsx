@@ -20,7 +20,7 @@ export default function Home() {
                 <p>{t('sections.about.second')}</p>
                 <p>{t('sections.about.third')} </p>
                 <div className='mt-40'>
-                    <Button to='#'><FontAwesomeIcon icon={faDownload} />{' '} Download CV</Button>{' '}
+                    <Button to='#'><FontAwesomeIcon icon={faDownload} />{' '} {t('sections.about.downloadcv')}</Button>{' '}
                     <Button type='secondary' className='mt-20' to='#'><FontAwesomeIcon icon={faEnvelope} />{' '} {t('sections.about.contactme')}</Button>
                 </div>
             </div>
@@ -31,49 +31,49 @@ export default function Home() {
                     <div className='title'>{t('date.months.june')} 2021 - {t('common.current')}</div>
                     <div className='body'>
                         <h2>Inmetrics</h2>
-                        <p>Engenheiro de Software Sênior, atuo no time mobile frontend desenvolvimento e evoluindo em um projeto para uma Fintech. Trabalhando principalmente com React Native.</p>
+                        <p>{t('sections.experience.inmetrics')}</p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2019 - {t('date.months.june')} 2021</div>
                     <div className='body'>
                         <h2>CASSI</h2>
-                        <p>Analista Pleno, atuei no time mobile e arquitetura, participando de grandes projetos de criação de aplicativo e desenvolvimento de apis. Trabalhei com React Native, React.JS, Java (Camel Spring Boot), 3Scale, Openshift.</p>
+                        <p>{t('sections.experience.cassipleno')}</p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2018 - {t('date.months.june')} 2019</div>
                     <div className='body'>
                         <h2>CASSI</h2>
-                        <p>Analista Júnior, atuei no time de sustentação e arquitetura participando de grandes projetos na estruturação de tecnologia da CASSI, trabalhei com Openshift, RHSSO, 3Scale, Java(Camel Sprint Boot), .NET CORE, React.JS, React Native.</p>
+                        <p>{t('sections.experience.cassijunior')}</p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2016 - {t('date.months.june')} 2018</div>
                     <div className='body'>
                         <h2>Stefanini</h2>
-                        <p>Programador Intermediário, atuei como terceirizado dentro do time de Marketing da CASSI, ajudando a manter o website e criando hotsites para a empresa, trabalhando com HTML, JS, CSS, Joomla.</p>
+                        <p>{t('sections.experience.stefaniniintermediary')}</p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2015 - {t('date.months.june')} 2016</div>
                     <div className='body'>
                         <h2>Stefanini</h2>
-                        <p>Programador Básico, atuei como terceirizado dentro do time de TI da CASSI, em projetos grandes dentro da empresa utilizando C#, Asp.NET MVC, HTML, CSS, Javascript. </p>
+                        <p>{t('sections.experience.stefaninibasic')} </p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2014 - {t('date.months.june')} 2015</div>
                     <div className='body'>
                         <h2>CASSI</h2>
-                        <p>Estagiário, atuei na Caixa de Assistência dos Funcionários do Banco do Brasil. Lá auxiliei na manutenção e desenvolvimento de alguns sistemas C#, Asp.Net MVC, HTML, CSS, Javascript.</p>
+                        <p>{t('sections.experience.cassiintern')}</p>
                     </div>
                 </p>
                 <p className='xp'>
                     <div className='title'>{t('date.months.january')} 2010 - {t('date.months.july')} 2010</div>
                     <div className='body'>
                         <h2>Mundo da Web</h2>
-                        <p>Atuei como Colaborador em um projeto de reformulação do website de Geotecnia da UNB - Universidade de Brasília, e também atuei na parte de manutenção de websites.</p>
+                        <p>{t('sections.experience.mundodaweb')}</p>
                     </div>
                 </p>
                 <div className='timeline' />
@@ -110,7 +110,7 @@ export default function Home() {
                 </ul>
             </div>
             <div className='separator' />
-            <h1 className='title'>{t('sections.academic.title')}</h1>
+            <h1 id='academic' className='title'>{t('sections.academic.title')}</h1>
             <div className='academic'>
                 <img src={logoUniceub} alt="logo-uniceub" />
                 <h3>{t('sections.academic.computerscience', {university:'UniCEUB'})}</h3>
@@ -132,19 +132,19 @@ export default function Home() {
             <h1 className='title'>{t('sections.portfolio.title')}</h1>
             <div className='portfolio'>
                 <div>
-                    <img src={logoPurple} />
+                    <img src={logoPurple} alt='logo-purple' />
                     <h3>Purple</h3>
-                    <p>Aplicativo de cartão fidelidade para uma empresa de Brasília - DF, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE, e banco de dados em MySQL.</p>
+                    <p>{t('sections.portfolio.purple')}</p>
                 </div>
                 <div>
-                    <img src={logoGoObra} />
+                    <img src={logoGoObra}  alt='logo-goobra'/>
                     <h3>GoObra</h3>
-                    <p>Aplicativo de gestão de obras para uma empresa de Brasília - DF, planejado com AdobeXD, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE, e banco de dados em MySQL.</p>
+                    <p>{t('sections.portfolio.goobra')}</p>
                 </div>
                 <div>
-                    <img src={logo7virtual} />
+                    <img src={logo7virtual}  alt='logo-7virtual'/>
                     <h3>7Virtual</h3>
-                    <p>Sistema de deploy automatizado e gestão de aplicações em qualquer servidor linux, desenvolvido utilizando Python, NodeJS e MongoDB.</p>
+                    <p>{t('sections.portfolio.7virtual')}</p>
                 </div>
             </div>
         </div>

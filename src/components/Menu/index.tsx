@@ -13,7 +13,10 @@ export default function Menu({}: Props): ReactElement {
   const { t, i18n } = useTranslation('common');
 
     const onClick = (a: any) => {
-        console.log('clicou'+ a);
+      const section = document.querySelector( '#academic' );
+      if(section){
+        section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+      }
         return false;
     }
     return (
@@ -26,22 +29,22 @@ export default function Menu({}: Props): ReactElement {
              <nav>
                <ul>
                  <li>
-                   <Link to="#sobre">Sobre</Link>
+                   <Link to="#sobre">{t('sections.about.title')}</Link>
                  </li>
                  <li>
-                   <Link to="#experiencia-profissional" onClick={onClick}>Experiência Profissional</Link>
+                   <Link to="#experiencia-profissional" onClick={onClick}>{t('sections.experience.title')}</Link>
                  </li>
                  <li>
-                   <Link to="#conhecimentos-tecnicos">Conhecimentos Técnicos</Link>
+                   <Link to="#conhecimentos-tecnicos">{t('sections.techskills.title')}</Link>
                  </li>
                  <li>
-                   <Link to="#formacao-academica">Formação Acadêmica</Link>
+                   <Link to="#formacao-academica">{t('sections.academic.title')}</Link>
                  </li>
                  <li>
-                   <Link to="#idiomas">Idiomas</Link>
+                   <Link to="#idiomas">{t('sections.language.title')}</Link>
                  </li>
                  <li>
-                   <Link to="#portfolio">Portfólio</Link>
+                   <Link to="#portfolio">{t('sections.portfolio.title')}</Link>
                  </li>
                </ul>
              </nav>
