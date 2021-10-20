@@ -30,10 +30,10 @@ export default function Home() {
                 <p>{t('sections.about.first')}</p>
                 <p>{t('sections.about.second')}</p>
                 <p>{t('sections.about.third')} </p>
-                <div className='mt-40'>
+                {/* <div className='mt-40'>
                     <Button to='#'><FontAwesomeIcon icon={faDownload} />{' '} {t('sections.about.downloadcv')}</Button>{' '}
                     <Button type='secondary' className='mt-20' to='#'><FontAwesomeIcon icon={faEnvelope} />{' '} {t('sections.about.contactme')}</Button>
-                </div>
+                </div> */}
             </div>
             <div className='separator' />
             <h1 className='title'>{t('sections.experience.title')}</h1>
