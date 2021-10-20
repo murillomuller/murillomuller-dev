@@ -62,7 +62,7 @@
             "intermediary": "Intermediário"
         },
         "portfolio": {
-            "title": "Portfólio",
+            "title": "Portfólio Pessoal",
             "purple": "Aplicativo de cartão fidelidade para uma empresa de Brasília - DF, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
             "goobra": "Aplicativo de gestão de obras para uma empresa de Brasília - DF, planejado com AdobeXD, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
             "7virtual": "Sistema de deploy automatizado e gestão de aplicações em qualquer servidor linux, desenvolvido utilizando Python, NodeJS e MongoDB."

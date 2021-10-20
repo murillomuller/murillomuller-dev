@@ -62,7 +62,7 @@
             "intermediary": "Intermediary"
         },
         "portfolio": {
-            "title": "Portfolio",
+            "title": "Personal Portfolio",
             "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE, and database in MySQL",
             "goobra": "App of construction management for a company from Brasilia - DF, planned with AdobeXD, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL.",
             "7virtual": "Automated deploy system and management of applications in any Linux server, developed using Python, NodeJS, and MongoDB."
