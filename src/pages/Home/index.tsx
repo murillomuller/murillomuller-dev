@@ -14,7 +14,7 @@ export default function Home() {
 
     return (
         <div>
-            <div className='about'>
+            <div id='about' className='about'>
                 <h1>{t('sections.about.hi')},</h1>
                 <p>{t('sections.about.first')}</p>
                 <p>{t('sections.about.second')}</p>
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className='separator' />
             <h1 className='title'>{t('sections.experience.title')}</h1>
-            <div className='experience'>
+            <div id='experience' className='experience'>
                 <p className='xp'>
                     <div className='title'>{t('date.months.june')} 2021 - {t('common.current')}</div>
                     <div className='body'>
@@ -35,35 +35,35 @@ export default function Home() {
                     </div>
                 </p>
                 <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2019 - {t('date.months.june')} 2021</div>
+                    <div className='title'>{t('date.months.april')} 2019 - {t('date.months.june')} 2021</div>
                     <div className='body'>
                         <h2>CASSI</h2>
                         <p>{t('sections.experience.cassipleno')}</p>
                     </div>
                 </p>
                 <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2018 - {t('date.months.june')} 2019</div>
+                    <div className='title'>{t('date.months.april')} 2018 - {t('date.months.april')} 2019</div>
                     <div className='body'>
                         <h2>CASSI</h2>
                         <p>{t('sections.experience.cassijunior')}</p>
                     </div>
                 </p>
                 <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2016 - {t('date.months.june')} 2018</div>
+                    <div className='title'>{t('date.months.january')} 2016 - {t('date.months.april')} 2018</div>
                     <div className='body'>
                         <h2>Stefanini</h2>
                         <p>{t('sections.experience.stefaniniintermediary')}</p>
                     </div>
                 </p>
                 <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2015 - {t('date.months.june')} 2016</div>
+                    <div className='title'>{t('date.months.february')} 2015 - {t('date.months.january')} 2016</div>
                     <div className='body'>
                         <h2>Stefanini</h2>
                         <p>{t('sections.experience.stefaninibasic')} </p>
                     </div>
                 </p>
                 <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2014 - {t('date.months.june')} 2015</div>
+                    <div className='title'>{t('date.months.june')} 2014 - {t('date.months.january')} 2015</div>
                     <div className='body'>
                         <h2>CASSI</h2>
                         <p>{t('sections.experience.cassiintern')}</p>
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <div className='separator' />
             <h1 className='title'>{t('sections.techskills.title')}</h1>
-            <div className='techSkills'>
+            <div id='techskills' className='techSkills'>
                 <ul>
                     <li className='skill-100'>React.JS<span>{t('sections.techskills.level.advanced')}</span></li>
                     <li className='skill-100'>React Native<span>{t('sections.techskills.level.advanced')}</span></li>
@@ -107,6 +107,19 @@ export default function Home() {
                     <li className='skill-40'>Keycloak<span>{t('sections.techskills.level.basic')}</span></li>
                     <li className='skill-40'>RHSSO<span>{t('sections.techskills.level.basic')}</span></li>
                     <li className='skill-20'>3Scale <span>{t('sections.techskills.level.basic')}</span></li>
+                    <li className='skill-50'>Agile<span>{t('sections.techskills.level.intermediary')}</span></li>
+                </ul>
+                <ul>
+                    <li className='skill-90'>Docker<span>{t('sections.techskills.level.advanced')}</span></li>
+                    <li className='skill-90'>Jenkins<span>{t('sections.techskills.level.advanced')}</span></li>
+                    <li className='skill-90'>Git<span>{t('sections.techskills.level.advanced')}</span></li>
+                    <li className='skill-90'>Azure DevOPS<span>{t('sections.techskills.level.advanced')}</span></li>
+                    <li className='skill-100'>REST<span>{t('sections.techskills.level.advanced')}</span></li>
+                </ul>
+                <ul>
+                    <li className='skill-20'>SOAP<span>{t('sections.techskills.level.basic')}</span></li>
+                    <li className='skill-20'>Kubernetes<span>{t('sections.techskills.level.basic')}</span></li>
+                    <li className='skill-90'>Typescript <span>{t('sections.techskills.level.advanced')}</span></li>
                 </ul>
             </div>
             <div className='separator' />
@@ -118,7 +131,7 @@ export default function Home() {
             </div>
             <div className='separator' />
             <h1 className='title'>{t('sections.language.title')}</h1>
-            <div className='language'>
+            <div id='language' className='language'>
                 <div>
                     <h3>{t('sections.language.portuguese')}</h3>
                     <p><b>{t('sections.language.native')}</b></p>
@@ -130,7 +143,7 @@ export default function Home() {
             </div>
             <div className='separator' />
             <h1 className='title'>{t('sections.portfolio.title')}</h1>
-            <div className='portfolio'>
+            <div id='portfolio' className='portfolio'>
                 <div>
                     <img src={logoPurple} alt='logo-purple' />
                     <h3>Purple</h3>

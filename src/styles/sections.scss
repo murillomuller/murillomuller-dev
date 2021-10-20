@@ -70,10 +70,12 @@
 .techSkills {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     ul {
+        flex: 26%;
         list-style: none;
-        padding: 0;
+        padding: 10px;
         li {
             span {
                 font-size: 8px;

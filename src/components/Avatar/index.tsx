@@ -6,6 +6,6 @@ interface Props {
 
 export default function Avatar({}: Props): ReactElement {
     return (
-            <img className='profileAvatar' src={profilePic}/>
+            <img className='profileAvatar' src={profilePic} alt='profilepic/>
     )
 }

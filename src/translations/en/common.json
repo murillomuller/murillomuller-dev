@@ -5,8 +5,17 @@
     "date": {
         "months": {
             "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
             "june": "June",
-            "july": "July"
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
         }
     },
     "profile": {
@@ -16,21 +25,21 @@
         "about": {
             "title": "About",
             "hi": "Hi",
-            "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB, I work with development for about 8 years and I love technology.",
-            "second": "Since I was a child I love computer, and in one of my online researchs I found code development, It was a whole new world. So on my own when I was 14 I decided to learn code development, and I ended up discovering that coding was something I enjoyed a lot more than online games.",
+            "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB and I love technology.",
+            "second": "Software developer with more than 7 years of experience following the complete understanding of entire software development life cycle to design and deliver complex solutions using React.JS, React Native, .NET, JavaScript and Java technologies. Solid skills in analysis and optimization, performing in-depth testing and troubleshooting to deploy high-performance deliverables. Expertise and strong training in modern technologies such as React.JS, React Native, Node.JS, MySQL, and more.",
             "third": "I've always been trying to update myself with new technologies and venturing into personal and work projects.",
             "downloadcv": "Download CV",
             "contactme": "Contact Me"
         },
         "experience": {
             "title": "Work Experience",
-            "inmetrics": "Senior Software Engineer, I work in frontend mobile team developing and improving a project to a Fintech from Brazil. Working mostly with React Native.",
-            "cassipleno": "Analyst, I worked in the mobile and in the architeture team, I participated in big projects of mobile apps development and development of rest apis. I mainly worked with React Native, React.JS, Java (Camel Spring Boot), 3Scale, Openshift.",
-            "cassijunior":  "Junior Analyst, I was from the sustainability team and architeture and I took part in big projects of reformulation in technology from CASSI, I worked with Openshift, RHSSO, 3Scale, Java(Camel Sprint Boot), .NET CORE, React.JS, React Native.",
-            "stefaniniintermediary": "Intermediary Developer, I worked as a third party employee in the marketing team of CASSI, helping to mantain the website and developing hotsites for the company, working with HTML, JS, CSS, Joomla.",
-            "stefaninibasic": "Basic Developer, I worked as a third party employee in the IT team of CASSI, in big projects inside the company using C#, Asp.NET MVC, HTML, CSS, Javascript.",
-            "cassiintern": "Trainee, at Caixa de Assistência dos Funcionários do Banco do Brasil. Helped in maintenance and developing of some systems C#, Asp.Net MVC, HTML, CSS, Javascript.",
-            "mundodaweb": "Take part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
+            "inmetrics": "Senior Mobile Software Engineer. Worked developing enhancements of a mobile app using React Native (Redux, Navigator, Hooks). Aligned with UX Team, and QA Testers. Documented components, developed manuals to be used by clients in the future. Developed according to best practices and following the agile methodology.",
+            "cassipleno": "Software Analyst. Maintained existing applications and designed and delivered new applications. Coordinated deployments of new software, feature updates, and fixes. Developed the intranet mobile app end-to-end full stack using React Native for frontend, .NET CORE, and JAVA for Rest Apis and connecting with SQL Server and MongoDB. Monitored and Developed automated build and continuous software integration process to drive build/release failure resolution. (Using Azure DevOps, Openshift, Nexus)",
+            "cassijunior":  "Junior Software Analyst. Designed, developed, and integrated software solutions based on business requirements and objectives. Participated in planning and designing new software architecture for web applications, adopting microservices as backend, and React.JS for frontend development.",
+            "stefaniniintermediary": "Intermediary Developer. Worked as a third-party employee in the marketing team of CASSI. Developed and maintained websites with HTML, CSS, JAVASCRIPT, CSS, and Joomla.",
+            "stefaninibasic": "Basic Developer. Web software development, converting mockups into usable web presence with C# MVC, HTML, JavaScript, AJAX, and JSON coding. Optimized and repaired application issues and bug fixes.",
+            "cassiintern": "Trainee. Shadowed senior team members to learn all related jobs. Developed and maintained some systems using C#, Asp.Net MVC, HTML, CSS Javascript, Ajax, Jquery. Assisted in planning and development of a big project that was a breakthrough for the company.",
+            "mundodaweb": "Took part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
         },
         "techskills": {
             "title": "Tech Skills",
