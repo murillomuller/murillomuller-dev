@@ -5,11 +5,9 @@ import { useTranslation } from "react-i18next";
 
 import flagBrazil from "../../assets/brazil_flag.png"
 import flagUsa from "../../assets/usa_flag.png"
-interface Props {
-    
-}
 
-export default function Menu({}: Props): ReactElement {
+
+export default function Menu(): ReactElement {
   const { t, i18n } = useTranslation('common');
 
     const onClick = (a: string) => {

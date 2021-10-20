@@ -26,7 +26,7 @@
             "title": "About",
             "hi": "Hi",
             "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB and I love technology.",
-            "second": "Software developer with more than 7 years of experience following the complete understanding of entire software development life cycle to design and deliver complex solutions using React.JS, React Native, .NET, JavaScript and Java technologies. Solid skills in analysis and optimization, performing in-depth testing and troubleshooting to deploy high-performance deliverables. Expertise and strong training in modern technologies such as React.JS, React Native, Node.JS, MySQL, and more.",
+            "second": "Software developer with more than 7 years of experience following the complete understanding of the entire software development life cycle to design and deliver complex solutions using React.JS, React Native, .NET, JavaScript, and Java technologies. Solid skills in analysis and optimization, performing in-depth testing and troubleshooting to deploy high-performance deliverables. Expertise and strong training in modern technologies such as React.JS, React Native, Node.JS, MySQL, and more.",
             "third": "I've always been trying to update myself with new technologies and venturing into personal and work projects.",
             "downloadcv": "Download CV",
             "contactme": "Contact Me"
@@ -63,9 +63,14 @@
         },
         "portfolio": {
             "title": "Portfolio",
-            "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL",
+            "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE, and database in MySQL",
             "goobra": "App of construction management for a company from Brasilia - DF, planned with AdobeXD, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL.",
-            "7virtual": "Automated deploy system and management of aplications in any Linux server, developed using Python, NodeJS and MongoDB."
+            "7virtual": "Automated deploy system and management of applications in any Linux server, developed using Python, NodeJS, and MongoDB."
         }
+    },
+    "footer": {
+        "righthere": "right here.",
+        "developed": "Developed and maintaned by Me",
+        "description": "This website is open source and you can download "
     }
 }

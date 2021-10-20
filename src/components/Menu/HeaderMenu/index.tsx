@@ -5,12 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 
 
-interface Props {
 
-}
-
-export default function HeaderMenu({ }: Props): ReactElement {
-    const { t, i18n } = useTranslation('common');
+export default function HeaderMenu(): ReactElement {
+    const { t } = useTranslation('common');
     return (
         <div className='headerMenu'>
             

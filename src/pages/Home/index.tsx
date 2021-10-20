@@ -10,7 +10,7 @@ import logoGoObra from '../../assets/logo_goobra.png';
 import logo7virtual from '../../assets/logo_7virtual.png';
 
 export default function Home() {
-    const {t, i18n} = useTranslation('common');
+    const {t} = useTranslation('common');
 
     return (
         <div>

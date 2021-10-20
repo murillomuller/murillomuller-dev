@@ -175,3 +175,18 @@ a {
         }
     }
 }
+footer {
+    clear: both;
+    position: relative;
+    text-align: center;
+    bottom: 20px;
+    span {
+        margin-right: 3em;
+    }
+    a {
+        color: $primary-color;
+        &:hover {
+            color: $text-color;
+        }
+    }
+}
