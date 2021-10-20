@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Button from '../../components/Button';
-import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import Button from '../../components/Button';
+// import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 
 import logoUniceub from '../../assets/logo_uniceub.png';
