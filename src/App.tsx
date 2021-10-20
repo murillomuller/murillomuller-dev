@@ -11,6 +11,7 @@ function App() {
         <Menu />
         <div className='rightContent'>
           <Route path="/" exact component={Home} />
+          <Route path="/:language" component={Home} />
         </div>
         <footer><span>{t('footer.developed')}</span>{t('footer.description')} <a href='https://github.com/murillomuller/murillomuller-dev' target='_blank' rel="noreferrer" >{t('footer.righthere')}</a></footer>
       </div>

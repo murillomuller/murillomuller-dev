@@ -1,16 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../../components/Button';
 import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import logoUniceub from '../../assets/logo_uniceub.png';
 import logoPurple from '../../assets/logo_purple.png';
 import logoGoObra from '../../assets/logo_goobra.png';
 import logo7virtual from '../../assets/logo_7virtual.png';
+import { useParams } from 'react-router-dom';
+
+
 
 export default function Home() {
-    const {t} = useTranslation('common');
+    let { language} = useParams<{language: string}>();
+    const { i18n,t } = useTranslation('common');
+
+
+    useEffect(() => {
+        if (language === 'br' || language === 'en') {
+            i18n.changeLanguage(language)
+        }
+    }, [language,i18n])
 
     return (
         <div>
@@ -126,7 +137,7 @@ export default function Home() {
             <h1 id='academic' className='title'>{t('sections.academic.title')}</h1>
             <div className='academic'>
                 <img src={logoUniceub} alt="logo-uniceub" />
-                <h3>{t('sections.academic.computerscience', {university:'UniCEUB'})}</h3>
+                <h3>{t('sections.academic.computerscience', { university: 'UniCEUB' })}</h3>
                 <p><b>{t('sections.academic.graduation')}</b> <br /> Jan/2014 - Dez/2019</p>
             </div>
             <div className='separator' />
@@ -150,12 +161,12 @@ export default function Home() {
                     <p>{t('sections.portfolio.purple')}</p>
                 </div>
                 <div>
-                    <img src={logoGoObra}  alt='logo-goobra'/>
+                    <img src={logoGoObra} alt='logo-goobra' />
                     <h3>GoObra</h3>
                     <p>{t('sections.portfolio.goobra')}</p>
                 </div>
                 <div>
-                    <img src={logo7virtual}  alt='logo-7virtual'/>
+                    <img src={logo7virtual} alt='logo-7virtual' />
                     <h3>7Virtual</h3>
                     <p>{t('sections.portfolio.7virtual')}</p>
                 </div>
