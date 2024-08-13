@@ -31,16 +31,61 @@
             "downloadcv": "Baixar Currículo",
             "contactme": "Fale Comigo"
         },
-        "experience": {
-            "title": "Experiência Profissional",
-            "inmetrics": "Engenheiro de software sênior para dispositivos móveis. Trabalhei desenvolvendo melhorias em um aplicativo mobile utilizando React Native (Redux, Navigator, Hooks). Alinhado com a equipe de UX e QAs. Documentei componentes, e desenvolvi manuais para serem utilizados pelos clientes no futuro. Desenvolvi de acordo com as melhores práticas e seguindo a metodologia ágil.",
-            "cassipleno": "Analista de software Pleno. Fiz a manutenção de aplicativos existentes e projetei e desenvolvi novos aplicativos. Fiz parte de implantações de novo software, desenvolvi novas features e correções. Desenvolvi o aplicativo mobile intranet ponta a ponta utilizando React Native para front-end, .NET CORE e JAVA para Rest Apis conectadas com SQL Server e MongoDB. Monitorei e desenvolvi CI/CD com check de falhas de build / deploy. (Usando Azure DevOps, Openshift, Nexus).",
-            "cassijunior":  "Analista de software Júnior. Projetei, desenvolvi e integrei soluções de software com base nos requisitos e objetivos de negócios. Participei do planejamento e desenho de nova arquitetura de software para aplicações web, adotando microsserviços como back-end, e React.JS para desenvolvimento de front-end.",
-            "stefaniniintermediary": "Programador Intermediário. Atuei como terceirizado na equipe de marketing da CASSI. Desenvolvi e fiz manutenção de sites utilizando HTML, CSS, JAVASCRIPT, CSS e Joomla.",
-            "stefaninibasic": "Programador Básico. Desenvolvi softwares para web, convertendo mockups em em sistemas web utilizando C# MVC, HTML, JavaScript, AJAX e JSON. Otimizei e fiz manutenção de problemas em aplicações resolvendo bugs.",
-            "cassiintern": "Estagiário. Acompanhei desenvolvedores senior da equipe para absorver todo o conhecimento relacionado ao trabalho. Desenvolvi efiz manutenção de alguns sistemas utilizando C#, Asp.Net MVC, HTML, CSS Javascript, Ajax, Jquery. Auxiliei no planejamento e desenvolvimento de um grande projeto que foi um grande avanço para a empresa.",
-            "mundodaweb": "Atuei como Colaborador em um projeto de reformulação do website de Geotecnia da UNB - Universidade de Brasília, e também atuei na parte de manutenção de websites."
-        },
+            "experience": {
+              "title": "Experiência Profissional",
+              "jobs": [
+                {
+                  "company": "Inmetrics",
+                  "role": "Engenheiro de Software Sênior para Dispositivos Móveis",
+                  "start": "Junho 2021",
+                  "end": "Presente",
+                  "description": "Engenheiro de software sênior para dispositivos móveis. Trabalhei desenvolvendo melhorias em um aplicativo mobile utilizando React Native (Redux, Navigator, Hooks). Alinhado com a equipe de UX e QAs. Documentei componentes, e desenvolvi manuais para serem utilizados pelos clientes no futuro. Desenvolvi de acordo com as melhores práticas e seguindo a metodologia ágil."
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Analista de Software Pleno",
+                  "start": "Abril 2019",
+                  "end": "Junho 2021",
+                  "description": "Analista de software Pleno. Fiz a manutenção de aplicativos existentes e projetei e desenvolvi novos aplicativos. Fiz parte de implantações de novo software, desenvolvi novas features e correções. Desenvolvi o aplicativo mobile intranet ponta a ponta utilizando React Native para front-end, .NET CORE e JAVA para Rest Apis conectadas com SQL Server e MongoDB. Monitorei e desenvolvi CI/CD com check de falhas de build / deploy. (Usando Azure DevOps, Openshift, Nexus)."
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Analista de Software Júnior",
+                  "start": "Abril 2018",
+                  "end": "Abril 2019",
+                  "description": "Analista de software Júnior. Projetei, desenvolvi e integrei soluções de software com base nos requisitos e objetivos de negócios. Participei do planejamento e desenho de nova arquitetura de software para aplicações web, adotando microsserviços como back-end, e React.JS para desenvolvimento de front-end."
+                },
+                {
+                  "company": "Stefanini",
+                  "role": "Programador Intermediário",
+                  "start": "Janeiro 2016",
+                  "end": "Abril 2018",
+                  "description": "Programador Intermediário. Atuei como terceirizado na equipe de marketing da CASSI. Desenvolvi e fiz manutenção de sites utilizando HTML, CSS, JavaScript, CSS e Joomla."
+                },
+                {
+                  "company": "Stefanini",
+                  "role": "Programador Básico",
+                  "start": "Fevereiro 2015",
+                  "end": "Janeiro 2016",
+                  "description": "Programador Básico. Desenvolvi softwares para web, convertendo mockups em sistemas web utilizando C# MVC, HTML, JavaScript, AJAX e JSON. Otimizei e fiz manutenção de problemas em aplicações resolvendo bugs."
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Estagiário",
+                  "start": "Junho 2014",
+                  "end": "Janeiro 2015",
+                  "description": "Estagiário. Acompanhei desenvolvedores senior da equipe para absorver todo o conhecimento relacionado ao trabalho. Desenvolvi e fiz manutenção de alguns sistemas utilizando C#, ASP.NET MVC, HTML, CSS, JavaScript, Ajax, JQuery. Auxiliei no planejamento e desenvolvimento de um grande projeto que foi um grande avanço para a empresa."
+                },
+                {
+                  "company": "Mundo da Web",
+                  "role": "Colaborador",
+                  "start": "Janeiro 2010",
+                  "end": "Julho 2010",
+                  "description": "Atuei como Colaborador em um projeto de reformulação do website de Geotecnia da UNB - Universidade de Brasília, e também atuei na parte de manutenção de websites."
+                }
+              ]
+            }
+,          
         "techskills": {
             "title": "Conhecimentos Técnicos",
             "level": {

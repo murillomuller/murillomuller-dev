@@ -31,16 +31,60 @@
             "downloadcv": "Download CV",
             "contactme": "Contact Me"
         },
-        "experience": {
-            "title": "Work Experience",
-            "inmetrics": "Senior Mobile Software Engineer. Worked developing enhancements of a mobile app using React Native (Redux, Navigator, Hooks). Aligned with UX Team, and QA Testers. Documented components, developed manuals to be used by clients in the future. Developed according to best practices and following the agile methodology.",
-            "cassipleno": "Software Analyst. Maintained existing applications and designed and delivered new applications. Coordinated deployments of new software, feature updates, and fixes. Developed the intranet mobile app end-to-end full stack using React Native for frontend, .NET CORE, and JAVA for Rest Apis and connecting with SQL Server and MongoDB. Monitored and Developed automated build and continuous software integration process to drive build/release failure resolution. (Using Azure DevOps, Openshift, Nexus)",
-            "cassijunior":  "Junior Software Analyst. Designed, developed, and integrated software solutions based on business requirements and objectives. Participated in planning and designing new software architecture for web applications, adopting microservices as backend, and React.JS for frontend development.",
-            "stefaniniintermediary": "Intermediary Developer. Worked as a third-party employee in the marketing team of CASSI. Developed and maintained websites with HTML, CSS, JAVASCRIPT, CSS, and Joomla.",
-            "stefaninibasic": "Basic Developer. Web software development, converting mockups into usable web presence with C# MVC, HTML, JavaScript, AJAX, and JSON coding. Optimized and repaired application issues and bug fixes.",
-            "cassiintern": "Trainee. Shadowed senior team members to learn all related jobs. Developed and maintained some systems using C#, Asp.Net MVC, HTML, CSS Javascript, Ajax, Jquery. Assisted in planning and development of a big project that was a breakthrough for the company.",
-            "mundodaweb": "Took part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
-        },
+            "experience": {
+              "title": "Work Experience",
+              "jobs": [
+                {
+                  "company": "Inmetrics",
+                  "role": "Senior Mobile Software Engineer",
+                  "start": "June 2021",
+                  "end": "Present",
+                  "description": "Senior Mobile Software Engineer. Worked developing enhancements of a mobile app using React Native (Redux, Navigator, Hooks). Aligned with UX Team, and QA Testers. Documented components, developed manuals to be used by clients in the future. Developed according to best practices and following the agile methodology."
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Software Analyst",
+                  "start": "April 2019",
+                  "end": "June 2021",
+                  "description": "Software Analyst. Maintained existing applications and designed and delivered new applications. Coordinated deployments of new software, feature updates, and fixes. Developed the intranet mobile app end-to-end full stack using React Native for frontend, .NET CORE, and JAVA for Rest Apis and connecting with SQL Server and MongoDB. Monitored and Developed automated build and continuous software integration process to drive build/release failure resolution. (Using Azure DevOps, Openshift, Nexus)"
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Junior Software Analyst",
+                  "start": "April 2018",
+                  "end": "April 2019",
+                  "description": "Junior Software Analyst. Designed, developed, and integrated software solutions based on business requirements and objectives. Participated in planning and designing new software architecture for web applications, adopting microservices as backend, and React.JS for frontend development."
+                },
+                {
+                  "company": "Stefanini",
+                  "role": "Intermediary Developer",
+                  "start": "January 2016",
+                  "end": "April 2018",
+                  "description": "Intermediary Developer. Worked as a third-party employee in the marketing team of CASSI. Developed and maintained websites with HTML, CSS, JavaScript, and Joomla."
+                },
+                {
+                  "company": "Stefanini",
+                  "role": "Basic Developer",
+                  "start": "February 2015",
+                  "end": "January 2016",
+                  "description": "Basic Developer. Web software development, converting mockups into usable web presence with C# MVC, HTML, JavaScript, AJAX, and JSON coding. Optimized and repaired application issues and bug fixes."
+                },
+                {
+                  "company": "CASSI",
+                  "role": "Trainee",
+                  "start": "June 2014",
+                  "end": "January 2015",
+                  "description": "Trainee. Shadowed senior team members to learn all related jobs. Developed and maintained some systems using C#, ASP.NET MVC, HTML, CSS, JavaScript, Ajax, and JQuery. Assisted in planning and development of a big project that was a breakthrough for the company."
+                },
+                {
+                  "company": "Mundo da Web",
+                  "role": "Web Developer",
+                  "start": "January 2010",
+                  "end": "July 2010",
+                  "description": "Took part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
+                }
+              ]
+            },          
         "techskills": {
             "title": "Tech Skills",
             "level": {

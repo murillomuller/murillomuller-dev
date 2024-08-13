@@ -23,6 +23,8 @@ export default function Home() {
         }
     }, [language,i18n])
 
+    const experienceData = t('sections.experience.jobs', { returnObjects: true });
+
     return (
         <div>
             <div id='about' className='about'>
@@ -38,55 +40,15 @@ export default function Home() {
             <div className='separator' />
             <h1 className='title'>{t('sections.experience.title')}</h1>
             <div id='experience' className='experience'>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2021 - {t('common.current')}</div>
-                    <div className='body'>
-                        <h2>Inmetrics</h2>
-                        <p>{t('sections.experience.inmetrics')}</p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.april')} 2019 - {t('date.months.june')} 2021</div>
-                    <div className='body'>
-                        <h2>CASSI</h2>
-                        <p>{t('sections.experience.cassipleno')}</p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.april')} 2018 - {t('date.months.april')} 2019</div>
-                    <div className='body'>
-                        <h2>CASSI</h2>
-                        <p>{t('sections.experience.cassijunior')}</p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.january')} 2016 - {t('date.months.april')} 2018</div>
-                    <div className='body'>
-                        <h2>Stefanini</h2>
-                        <p>{t('sections.experience.stefaniniintermediary')}</p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.february')} 2015 - {t('date.months.january')} 2016</div>
-                    <div className='body'>
-                        <h2>Stefanini</h2>
-                        <p>{t('sections.experience.stefaninibasic')} </p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.june')} 2014 - {t('date.months.january')} 2015</div>
-                    <div className='body'>
-                        <h2>CASSI</h2>
-                        <p>{t('sections.experience.cassiintern')}</p>
-                    </div>
-                </p>
-                <p className='xp'>
-                    <div className='title'>{t('date.months.january')} 2010 - {t('date.months.july')} 2010</div>
-                    <div className='body'>
-                        <h2>Mundo da Web</h2>
-                        <p>{t('sections.experience.mundodaweb')}</p>
-                    </div>
-                </p>
+                {experienceData.map((job: any, index: number) => (
+                    <p key={index} className='xp'>
+                        <div className='title'>{job.start} - {job.end}</div>
+                        <div className='body'>
+                            <h2>{job.company}</h2>
+                            <p>{job.description}</p>
+                        </div>
+                    </p>
+                ))}
                 <div className='timeline' />
             </div>
             <div className='separator' />
