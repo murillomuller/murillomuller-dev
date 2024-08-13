@@ -1,29 +1,35 @@
-# Step 1: Use an official Node.js image as the base image
-FROM node:18-alpine
+# Stage 1: Build the React app
+FROM node:14-alpine AS build
 
-# Step 2: Install Python and make
-RUN apk add --no-cache python3 make g++
-
-# Step 3: Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Step 4: Copy package.json and package-lock.json
+# Copy the package.json and package-lock.json to the working directory
 COPY package.json package-lock.json ./
 
-# Step 5: Install dependencies
-RUN npm install --production
+# Install dependencies
+RUN npm install
 
-# Step 6: Copy the rest of the application code
+# Copy the .env.production file to the working directory
+COPY .env.production .env
+
+# Copy the rest of the application code to the working directory
 COPY . .
 
-# Step 7: Build the React application
+# Build the React application
 RUN npm run build
 
-# Step 8: Install a static server to serve the build
-RUN npm install -g serve
+# Stage 2: Serve the React app using a lightweight web server
+FROM nginx:alpine
 
-# Step 8: Set the command to start the static server
-CMD ["serve", "-s", "build", "-l", "5003"]
+# Copy the built React app from the previous stage
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port 3000 to the outside world
-EXPOSE 5003
+# Copy the nginx configuration file
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+# Expose the port that the container will run on
+EXPOSE 80
+
+# Start the nginx server
+CMD ["nginx", "-g", "daemon off;"]
