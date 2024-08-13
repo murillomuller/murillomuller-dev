@@ -1,0 +1,76 @@
+{
+    "common": {
+        "current": "Current"
+    },
+    "date": {
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        }
+    },
+    "profile": {
+        "role": "FULLSTACK DEVELOPER"
+    },
+    "sections": {
+        "about": {
+            "title": "About",
+            "hi": "Hi",
+            "first": "My name is Murillo, I'm a developer born in Londrina - PR (Brazil). I'm graduated in Computer Science at UniCEUB and I love technology.",
+            "second": "Software developer with more than 7 years of experience following the complete understanding of the entire software development life cycle to design and deliver complex solutions using React.JS, React Native, .NET, JavaScript, and Java technologies. Solid skills in analysis and optimization, performing in-depth testing and troubleshooting to deploy high-performance deliverables. Expertise and strong training in modern technologies such as React.JS, React Native, Node.JS, MySQL, and more.",
+            "third": "I've always been trying to update myself with new technologies and venturing into personal and work projects.",
+            "downloadcv": "Download CV",
+            "contactme": "Contact Me"
+        },
+        "experience": {
+            "title": "Work Experience",
+            "inmetrics": "Senior Mobile Software Engineer. Worked developing enhancements of a mobile app using React Native (Redux, Navigator, Hooks). Aligned with UX Team, and QA Testers. Documented components, developed manuals to be used by clients in the future. Developed according to best practices and following the agile methodology.",
+            "cassipleno": "Software Analyst. Maintained existing applications and designed and delivered new applications. Coordinated deployments of new software, feature updates, and fixes. Developed the intranet mobile app end-to-end full stack using React Native for frontend, .NET CORE, and JAVA for Rest Apis and connecting with SQL Server and MongoDB. Monitored and Developed automated build and continuous software integration process to drive build/release failure resolution. (Using Azure DevOps, Openshift, Nexus)",
+            "cassijunior":  "Junior Software Analyst. Designed, developed, and integrated software solutions based on business requirements and objectives. Participated in planning and designing new software architecture for web applications, adopting microservices as backend, and React.JS for frontend development.",
+            "stefaniniintermediary": "Intermediary Developer. Worked as a third-party employee in the marketing team of CASSI. Developed and maintained websites with HTML, CSS, JAVASCRIPT, CSS, and Joomla.",
+            "stefaninibasic": "Basic Developer. Web software development, converting mockups into usable web presence with C# MVC, HTML, JavaScript, AJAX, and JSON coding. Optimized and repaired application issues and bug fixes.",
+            "cassiintern": "Trainee. Shadowed senior team members to learn all related jobs. Developed and maintained some systems using C#, Asp.Net MVC, HTML, CSS Javascript, Ajax, Jquery. Assisted in planning and development of a big project that was a breakthrough for the company.",
+            "mundodaweb": "Took part in a reformulation project of the UNB's (Brasilia University) Geotecnia website, and also in some website maintenance."
+        },
+        "techskills": {
+            "title": "Tech Skills",
+            "level": {
+                "basic": "Basic",
+                "intermediary": "Intermediary",
+                "advanced": "Advanced"
+            }
+        },
+        "academic": {
+            "title": "Education",
+            "computerscience": "Computer Science at {{university}}",
+            "graduation": "Graduation"
+        },
+        "language": {
+            "title": "Languages",
+            "portuguese": "Portuguese",
+            "english": "English",
+            "native": "Native",
+            "intermediary": "Intermediary"
+        },
+        "portfolio": {
+            "title": "Personal Portfolio",
+            "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE, and database in MySQL",
+            "goobra": "App of construction management for a company from Brasilia - DF, planned with AdobeXD, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL.",
+            "7virtual": "Automated deploy system and management of applications in any Linux server, developed using Python, NodeJS, and MongoDB."
+        }
+    },
+    "footer": {
+        "righthere": "right here.",
+        "developed": "Developed and maintaned by Me",
+        "description": "This website is open source and you can download "
+    }
+}

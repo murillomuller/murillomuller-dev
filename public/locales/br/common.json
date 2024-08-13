@@ -1,0 +1,76 @@
+{
+    "common": {
+        "current": "Atual"
+    },
+    "date": {
+        "months": {
+            "january": "Janeiro",
+            "february": "Fevereiro",
+            "march": "Março",
+            "april": "Abril",
+            "may": "Maio",
+            "june": "Junho",
+            "july": "Julho",
+            "august": "Agosto",
+            "september": "Setembro",
+            "october": "Outubro",
+            "november": "Novembro",
+            "december": "Dezembro"
+        }
+    },
+    "profile": {
+        "role": "DESENVOLVEDOR FULLSTACK"
+    },
+    "sections": {
+        "about": {
+            "title": "Sobre",
+            "hi": "Olá",
+            "first": "Eu sou o Murillo, sou um desenvolvedor nascido em Londrina - PR. Sou formado em Ciência da Computação pelo UniCEUB e sou apaixonado por tecnologia.",
+            "second": "Desenvolvedor de software com mais de 7 anos de experiência com entendimento completo de todo o ciclo de vida de desenvolvimento de software afim de projetar e entregar soluções complexas usando React.JS, React Native, .NET, JavaScript e tecnologias Java. Habilidades sólidas em análise e otimização, em realização de testes detalhados e solução de problemas para implantar produtos de alta performance. Experiência e estudo constante em tecnologias modernas como React.JS, React Native, Node.JS, MySQL e muito mais.",
+            "third": "Sempre venho tentando me atualizar e buscar por novas tecnologias e me aventurando com desenvolvimento de projetos pessoais e no trabalho.",
+            "downloadcv": "Baixar Currículo",
+            "contactme": "Fale Comigo"
+        },
+        "experience": {
+            "title": "Experiência Profissional",
+            "inmetrics": "Engenheiro de software sênior para dispositivos móveis. Trabalhei desenvolvendo melhorias em um aplicativo mobile utilizando React Native (Redux, Navigator, Hooks). Alinhado com a equipe de UX e QAs. Documentei componentes, e desenvolvi manuais para serem utilizados pelos clientes no futuro. Desenvolvi de acordo com as melhores práticas e seguindo a metodologia ágil.",
+            "cassipleno": "Analista de software Pleno. Fiz a manutenção de aplicativos existentes e projetei e desenvolvi novos aplicativos. Fiz parte de implantações de novo software, desenvolvi novas features e correções. Desenvolvi o aplicativo mobile intranet ponta a ponta utilizando React Native para front-end, .NET CORE e JAVA para Rest Apis conectadas com SQL Server e MongoDB. Monitorei e desenvolvi CI/CD com check de falhas de build / deploy. (Usando Azure DevOps, Openshift, Nexus).",
+            "cassijunior":  "Analista de software Júnior. Projetei, desenvolvi e integrei soluções de software com base nos requisitos e objetivos de negócios. Participei do planejamento e desenho de nova arquitetura de software para aplicações web, adotando microsserviços como back-end, e React.JS para desenvolvimento de front-end.",
+            "stefaniniintermediary": "Programador Intermediário. Atuei como terceirizado na equipe de marketing da CASSI. Desenvolvi e fiz manutenção de sites utilizando HTML, CSS, JAVASCRIPT, CSS e Joomla.",
+            "stefaninibasic": "Programador Básico. Desenvolvi softwares para web, convertendo mockups em em sistemas web utilizando C# MVC, HTML, JavaScript, AJAX e JSON. Otimizei e fiz manutenção de problemas em aplicações resolvendo bugs.",
+            "cassiintern": "Estagiário. Acompanhei desenvolvedores senior da equipe para absorver todo o conhecimento relacionado ao trabalho. Desenvolvi efiz manutenção de alguns sistemas utilizando C#, Asp.Net MVC, HTML, CSS Javascript, Ajax, Jquery. Auxiliei no planejamento e desenvolvimento de um grande projeto que foi um grande avanço para a empresa.",
+            "mundodaweb": "Atuei como Colaborador em um projeto de reformulação do website de Geotecnia da UNB - Universidade de Brasília, e também atuei na parte de manutenção de websites."
+        },
+        "techskills": {
+            "title": "Conhecimentos Técnicos",
+            "level": {
+                "basic": "Básico",
+                "intermediary": "Intermediário",
+                "advanced": "Avançado"
+            }
+        },
+        "academic": {
+            "title": "Formação Acadêmica",
+            "computerscience": "Ciência da Computação pelo {{university}}",
+            "graduation": "Graduação"
+        },
+        "language": {
+            "title": "Idiomas",
+            "portuguese": "Português",
+            "english": "Inglês",
+            "native": "Nativo",
+            "intermediary": "Intermediário"
+        },
+        "portfolio": {
+            "title": "Portfólio Pessoal",
+            "purple": "Aplicativo de cartão fidelidade para uma empresa de Brasília - DF, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "goobra": "Aplicativo de gestão de obras para uma empresa de Brasília - DF, planejado com AdobeXD, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "7virtual": "Sistema de deploy automatizado e gestão de aplicações em qualquer servidor linux, desenvolvido utilizando Python, NodeJS e MongoDB."
+        }
+    },
+    "footer": {
+        "righthere": "aqui.",
+        "developed": "Desenvolvido e mantido por Mim.",
+        "description": "Este website tem código aberto e você pode baixar "
+    }
+}
