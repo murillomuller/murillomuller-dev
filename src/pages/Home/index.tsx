@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 // import Button from '../../components/Button';
 // import { faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,29 +13,15 @@ import { useParams } from 'react-router-dom';
 
 
 export default function Home() {
-    let { language } = useParams<{ language: string }>();
-    const { i18n, t } = useTranslation('common');
-    const [loaded, setLoaded] = useState(false);
+    let { language} = useParams<{language: string}>();
+    const { i18n,t } = useTranslation('common');
+
 
     useEffect(() => {
-            // Fetch the JSON file dynamically
-            fetch(`locales/${language}/common.json`)
-                .then(response => response.json())
-                .then(data => {
-                    // Add the fetched translations to i18next
-                    i18n.addResourceBundle(language, 'common', data);
-                    i18n.changeLanguage(language);
-                    setLoaded(true);
-                })
-                .catch(error => {
-                    console.error("Failed to load translations:", error);
-                    setLoaded(true); // Handle the error case
-                });
-    }, [language, i18n]);
-
-    if (!loaded) {
-        return <div>Loading...</div>; // Optional: show a loading state while translations are being fetched
-    }
+        if (language === 'br' || language === 'en') {
+            i18n.changeLanguage(language)
+        }
+    }, [language,i18n])
 
     return (
         <div>

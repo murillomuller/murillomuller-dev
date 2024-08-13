@@ -7,7 +7,7 @@ function App() {
   const {t} = useTranslation('common');
   return (
     <Router>
-      <div className='container'>
+      <div className='container' style={{zIndex: 9999}}>
         <Menu />
         <div className='rightContent'>
           <Route path="/" exact component={Home} />
