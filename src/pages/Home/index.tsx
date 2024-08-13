@@ -40,7 +40,7 @@ export default function Home() {
             <div className='separator' />
             <h1 className='title'>{t('sections.experience.title')}</h1>
             <div id='experience' className='experience'>
-                {experienceData.map((job: any, index: number) => (
+                {Array.isArray(experienceData) && experienceData.map((job: any, index: number) => (
                     <p key={index} className='xp'>
                         <div className='title'>{job.start} - {job.end}</div>
                         <div className='body'>
