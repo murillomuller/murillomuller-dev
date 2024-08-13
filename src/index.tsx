@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 
-const loadTranslations = async (language) => {
+const loadTranslations = async (language: string) => {
   const response = await fetch(`/locales/${language}/common.json`);
   if (!response.ok) {
     throw new Error(`Failed to load translations for ${language}`);
