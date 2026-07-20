@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "worker": "tsx src/jobs/worker.ts",
     "worker:daily": "tsx src/jobs/worker.ts",
