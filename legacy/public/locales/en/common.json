@@ -1,0 +1,155 @@
+{
+    "common": {
+        "current": "Current"
+    },
+    "date": {
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        }
+    },
+    "profile": {
+        "role": "FRONTEND & FULL STACK ENGINEER"
+    },
+    "sections": {
+        "about": {
+            "title": "About",
+            "hi": "Hi",
+            "first": "I'm Murillo, a developer born in Londrina - PR (Brazil). I hold a Computer Science degree from UniCEUB and I'm passionate about building digital products end to end.",
+            "second": "Software engineer with 10+ years of experience delivering web and mobile solutions. Recently I've worked as a Frontend Engineer on AI-powered products (Next.js, shadcn/ui, Vercel), as a Full Stack developer on industrial platforms (Next.js, PostgreSQL, AWS, and CI/CD), and at Solfácil with Vue.js, Python, PostgreSQL, Kafka, and GraphQL. I have 5+ years with React Native (Kodiak app at CASSI), state management with Redux/Redux Toolkit and Zustand, and building responsive layouts with modern CSS since the start of my career.",
+            "third": "I keep leveling up with new technologies, combining modern frontend, AI integrations, and continuous delivery practices across personal and professional projects.",
+            "downloadcv": "Download CV",
+            "contactme": "Contact Me"
+        },
+        "experience": {
+            "title": "Work Experience",
+            "jobs": [
+                {
+                    "company": "CASSI",
+                    "role": "Mobile Software Engineer",
+                    "start": "May 2026",
+                    "end": "Present",
+                    "description": "Working on the Kodiak React Native mobile team, developing and maintaining the app with Redux/Redux Toolkit and Zustand for state management, responsive UIs, and best practices, aligned with UX and QA. Ongoing React Native experience for 5+ years."
+                },
+                {
+                    "company": "Puríssima",
+                    "role": "Full Stack Developer (Temporary Contract)",
+                    "start": "October 2025",
+                    "end": "May 2026",
+                    "description": "Temporary contract responsible for building the label factory management platform and the complete system. Delivered the solution with Next.js, PostgreSQL, and AWS, including responsive layouts with modern CSS (Tailwind), covering end-to-end factory operational workflows. Also owned the CI/CD pipelines for the full delivery flow."
+                },
+                {
+                    "company": "Squad AI",
+                    "role": "Frontend Engineer",
+                    "start": "August 2025",
+                    "end": "September 2025",
+                    "description": "In-house Frontend Engineer at Squad AI (London), fully remote. Responsible for maintaining and updating the platform frontend and integrating with AIs, using shadcn/ui, Next.js, and Vercel, with a focus on responsive UI and modern CSS."
+                },
+                {
+                    "company": "Deeploy",
+                    "role": "Frontend Engineer",
+                    "start": "June 2025",
+                    "end": "August 2025",
+                    "description": "Frontend Engineer contracted by Deeploy (Portugal), allocated remotely to Squad AI in London. Responsible for maintaining and updating the frontend and integrating with AIs, using shadcn/ui, Next.js, and Vercel, including responsive interfaces with modern CSS."
+                },
+                {
+                    "company": "Solfácil",
+                    "role": "Full Stack Developer",
+                    "start": "January 2024",
+                    "end": "December 2024",
+                    "description": "Full stack development with Vue.js and Python, including PostgreSQL, Kafka queues, and GraphQL APIs, plus responsive web interfaces with modern CSS."
+                },
+                {
+                    "company": "Inmetrics",
+                    "role": "Senior Mobile Software Engineer",
+                    "start": "June 2021",
+                    "end": "December 2023",
+                    "description": "Senior Mobile Software Engineer, allocated to CASSI on the Kodiak React Native mobile team. Built enhancements using React Native, Redux/Redux Toolkit, Zustand, Navigator, and Hooks. Aligned with UX and QA. Documented components and client manuals. Responsive layouts and best practices under agile. 5+ years of React Native experience."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Software Analyst",
+                    "start": "April 2019",
+                    "end": "June 2021",
+                    "description": "Software Analyst. Maintained existing applications and designed and delivered new ones. Coordinated deployments, features, and fixes. Built the intranet mobile app end-to-end with React Native (including Redux for state), .NET Core and Java REST APIs (SQL Server and MongoDB), with responsive UI. CI/CD with Azure DevOps, Openshift, and Nexus."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Junior Software Analyst",
+                    "start": "April 2018",
+                    "end": "April 2019",
+                    "description": "Junior Software Analyst. Designed, developed, and integrated software solutions based on business requirements. Participated in planning new web architecture with microservices as backend and React.JS for frontend, including responsive layouts with modern HTML/CSS."
+                },
+                {
+                    "company": "Stefanini",
+                    "role": "Intermediary Developer",
+                    "start": "January 2016",
+                    "end": "April 2018",
+                    "description": "Intermediary Developer. Worked as a third-party employee in the marketing team of CASSI. Developed and maintained websites with HTML, responsive CSS, JavaScript, and Joomla."
+                },
+                {
+                    "company": "Stefanini",
+                    "role": "Basic Developer",
+                    "start": "February 2015",
+                    "end": "January 2016",
+                    "description": "Basic Developer. Web software development, converting mockups into usable web presence with C# MVC, HTML, CSS, JavaScript, AJAX, and JSON. Responsive layouts, optimization, and bug fixes."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Trainee",
+                    "start": "June 2014",
+                    "end": "January 2015",
+                    "description": "Trainee. Shadowed senior team members. Developed and maintained systems using C#, ASP.NET MVC, HTML, CSS, JavaScript, Ajax, and jQuery, including responsive interfaces. Assisted in planning and development of a major company project."
+                },
+                {
+                    "company": "Mundo da Web",
+                    "role": "Web Developer",
+                    "start": "January 2010",
+                    "end": "July 2010",
+                    "description": "Took part in a reformulation project of UNB's (Brasilia University) Geotecnia website with responsive HTML/CSS, and also in website maintenance."
+                }
+            ]
+        },
+        "techskills": {
+            "title": "Tech Skills",
+            "level": {
+                "basic": "Basic",
+                "intermediary": "Intermediary",
+                "advanced": "Advanced"
+            }
+        },
+        "academic": {
+            "title": "Education",
+            "computerscience": "Computer Science at {{university}}",
+            "graduation": "Graduation"
+        },
+        "language": {
+            "title": "Languages",
+            "portuguese": "Portuguese",
+            "english": "English",
+            "native": "Native",
+            "intermediary": "Intermediary"
+        },
+        "portfolio": {
+            "title": "Personal Portfolio",
+            "purple": "App of loyalty card for a company from Brasilia - DF, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE, and database in MySQL",
+            "goobra": "App of construction management for a company from Brasilia - DF, planned with AdobeXD, developed in React Native, with a management dashboard in React.JS, backend in .NET CORE and database in MySQL.",
+            "7virtual": "Automated deploy system and management of applications in any Linux server, developed using Python, NodeJS, and MongoDB."
+        }
+    },
+    "footer": {
+        "righthere": "right here.",
+        "developed": "Developed and maintaned by Me",
+        "description": "This website is open source and you can download "
+    }
+}

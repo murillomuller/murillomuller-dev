@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #222222;
+  --color-background-dark: #171717;
+  --color-background-darker: #131313;
+  --color-gray: #747474;
+  --color-white: #ffffff;
+  --color-primary: #da0037;
+  --color-text-main: #ededed;
+  --color-text-dark: #131313;
+  --color-text-secondary: #afafaf;
+  --color-card: #222222;
+  --color-input: #131313;
+  --color-border: #2a2a2a;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: #2a2a2a;
+  }
+
+  body {
+    background-color: #171717;
+    color: #ededed;
+  }
+}

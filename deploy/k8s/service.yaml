@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: next-cv-svc
+  namespace: default
+spec:
+  ports:
+    - port: 80
+      targetPort: 3000
+      protocol: TCP
+  selector:
+    app: next-cv

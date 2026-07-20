@@ -1,0 +1,155 @@
+{
+    "common": {
+        "current": "Atual"
+    },
+    "date": {
+        "months": {
+            "january": "Janeiro",
+            "february": "Fevereiro",
+            "march": "Março",
+            "april": "Abril",
+            "may": "Maio",
+            "june": "Junho",
+            "july": "Julho",
+            "august": "Agosto",
+            "september": "Setembro",
+            "october": "Outubro",
+            "november": "Novembro",
+            "december": "Dezembro"
+        }
+    },
+    "profile": {
+        "role": "ENGENHEIRO FRONTEND & FULL STACK"
+    },
+    "sections": {
+        "about": {
+            "title": "Sobre",
+            "hi": "Olá",
+            "first": "Eu sou o Murillo, desenvolvedor nascido em Londrina - PR. Sou formado em Ciência da Computação pelo UniCEUB e apaixonado por construir produtos digitais de ponta a ponta.",
+            "second": "Engenheiro de software com mais de 10 anos de experiência entregando soluções web e mobile. Nos últimos anos atuei como Frontend Engineer em produtos com IA (Next.js, shadcn/ui, Vercel), como Full Stack em plataformas industriais (Next.js, PostgreSQL, AWS e CI/CD) e na Solfácil com Vue.js, Python, PostgreSQL, Kafka e GraphQL. Tenho mais de 5 anos com React Native (app Kodiak na CASSI), gerenciamento de estado com Redux/Redux Toolkit e Zustand, e criação de layouts responsivos com CSS moderno desde o início da carreira.",
+            "third": "Sigo em constante evolução com novas tecnologias, unindo frontend moderno, integrações com IA e boas práticas de entrega contínua em projetos pessoais e profissionais.",
+            "downloadcv": "Baixar Currículo",
+            "contactme": "Fale Comigo"
+        },
+        "experience": {
+            "title": "Experiência Profissional",
+            "jobs": [
+                {
+                    "company": "CASSI",
+                    "role": "Engenheiro de Software Mobile",
+                    "start": "Maio 2026",
+                    "end": "Presente",
+                    "description": "Atuo no time mobile React Native Kodiak, desenvolvendo e mantendo o aplicativo com Redux/Redux Toolkit e Zustand para gerenciamento de estado, interfaces responsivas e melhores práticas, alinhado com UX e QA. Experiência contínua com React Native há mais de 5 anos."
+                },
+                {
+                    "company": "Puríssima",
+                    "role": "Desenvolvedor Full Stack (Contrato Temporário)",
+                    "start": "Outubro 2025",
+                    "end": "Maio 2026",
+                    "description": "Contrato temporário responsável por criar a plataforma de gerenciamento da fábrica de rótulos e o sistema completo. Desenvolvi a solução com Next.js, PostgreSQL e AWS, incluindo layouts responsivos com CSS moderno (Tailwind), cobrindo fluxos operacionais da fábrica de ponta a ponta. Também fui responsável pelos pipelines de CI/CD de todo o fluxo."
+                },
+                {
+                    "company": "Squad AI",
+                    "role": "Frontend Engineer",
+                    "start": "Agosto 2025",
+                    "end": "Setembro 2025",
+                    "description": "Frontend Engineer internalizado na Squad AI (Londres), em regime remoto. Responsável por manter e atualizar o frontend da plataforma e integrar com IAs, utilizando shadcn/ui, Next.js e Vercel, com foco em UI responsiva e CSS moderno."
+                },
+                {
+                    "company": "Deeploy",
+                    "role": "Frontend Engineer",
+                    "start": "Junho 2025",
+                    "end": "Agosto 2025",
+                    "description": "Frontend Engineer contratado pela Deeploy (Portugal), alocado remotamente na Squad AI em Londres. Responsável por manter e atualizar o frontend e integrar com IAs, utilizando shadcn/ui, Next.js e Vercel, incluindo interfaces responsivas com CSS moderno."
+                },
+                {
+                    "company": "Solfácil",
+                    "role": "Desenvolvedor Full Stack",
+                    "start": "Janeiro 2024",
+                    "end": "Dezembro 2024",
+                    "description": "Desenvolvimento de soluções full stack com Vue.js e Python, incluindo PostgreSQL, filas com Kafka e APIs GraphQL, além de interfaces web responsivas com CSS moderno."
+                },
+                {
+                    "company": "Inmetrics",
+                    "role": "Engenheiro de Software Sênior para Dispositivos Móveis",
+                    "start": "Junho 2021",
+                    "end": "Dezembro 2023",
+                    "description": "Engenheiro de software sênior para dispositivos móveis, alocado na CASSI no time mobile React Native Kodiak. Desenvolvi melhorias no app com React Native, Redux/Redux Toolkit, Zustand, Navigator e Hooks. Alinhado com UX e QA. Documentei componentes e manuais para clientes. Layouts responsivos e melhores práticas em metodologia ágil. Mais de 5 anos de experiência com React Native."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Analista de Software Pleno",
+                    "start": "Abril 2019",
+                    "end": "Junho 2021",
+                    "description": "Analista de software Pleno. Mantive apps existentes e projetei/desenvolvi novos. Participei de implantações, features e correções. Desenvolvi o app mobile intranet ponta a ponta com React Native (incluindo Redux para estado), .NET CORE e JAVA para REST APIs (SQL Server e MongoDB), com UI responsiva. CI/CD com Azure DevOps, Openshift e Nexus."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Analista de Software Júnior",
+                    "start": "Abril 2018",
+                    "end": "Abril 2019",
+                    "description": "Analista de software Júnior. Projetei, desenvolvi e integrei soluções com base nos requisitos de negócio. Participei do planejamento de nova arquitetura web com microsserviços no backend e React.JS no frontend, incluindo layouts responsivos com HTML/CSS moderno."
+                },
+                {
+                    "company": "Stefanini",
+                    "role": "Programador Intermediário",
+                    "start": "Janeiro 2016",
+                    "end": "Abril 2018",
+                    "description": "Programador Intermediário. Atuei como terceirizado na equipe de marketing da CASSI. Desenvolvi e mantive sites com HTML, CSS responsivo, JavaScript e Joomla."
+                },
+                {
+                    "company": "Stefanini",
+                    "role": "Programador Básico",
+                    "start": "Fevereiro 2015",
+                    "end": "Janeiro 2016",
+                    "description": "Programador Básico. Desenvolvi softwares web convertendo mockups em sistemas com C# MVC, HTML, CSS, JavaScript, AJAX e JSON. Layouts responsivos, otimização e correção de bugs."
+                },
+                {
+                    "company": "CASSI",
+                    "role": "Estagiário",
+                    "start": "Junho 2014",
+                    "end": "Janeiro 2015",
+                    "description": "Estagiário. Acompanhei seniores da equipe. Desenvolvi e mantive sistemas com C#, ASP.NET MVC, HTML, CSS, JavaScript, Ajax e jQuery, incluindo interfaces responsivas. Auxiliei no planejamento de um grande projeto da empresa."
+                },
+                {
+                    "company": "Mundo da Web",
+                    "role": "Colaborador",
+                    "start": "Janeiro 2010",
+                    "end": "Julho 2010",
+                    "description": "Atuei como Colaborador na reformulação do website de Geotecnia da UNB, com HTML/CSS responsivo e manutenção de websites."
+                }
+            ]
+        },
+        "techskills": {
+            "title": "Conhecimentos Técnicos",
+            "level": {
+                "basic": "Básico",
+                "intermediary": "Intermediário",
+                "advanced": "Avançado"
+            }
+        },
+        "academic": {
+            "title": "Formação Acadêmica",
+            "computerscience": "Ciência da Computação pelo {{university}}",
+            "graduation": "Graduação"
+        },
+        "language": {
+            "title": "Idiomas",
+            "portuguese": "Português",
+            "english": "Inglês",
+            "native": "Nativo",
+            "intermediary": "Intermediário"
+        },
+        "portfolio": {
+            "title": "Portfólio Pessoal",
+            "purple": "Aplicativo de cartão fidelidade para uma empresa de Brasília - DF, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "goobra": "Aplicativo de gestão de obras para uma empresa de Brasília - DF, planejado com AdobeXD, desenvolvido em React Native, com uma dashboard de gestão em React.JS, backend em .NET CORE e banco de dados em MySQL.",
+            "7virtual": "Sistema de deploy automatizado e gestão de aplicações em qualquer servidor linux, desenvolvido utilizando Python, NodeJS e MongoDB."
+        }
+    },
+    "footer": {
+        "righthere": "aqui.",
+        "developed": "Desenvolvido e mantido por Mim.",
+        "description": "Este website tem código aberto e você pode baixar "
+    }
+}

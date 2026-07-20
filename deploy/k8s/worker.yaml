@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: next-cv-worker
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: next-cv-worker
+  template:
+    metadata:
+      labels:
+        app: next-cv-worker
+    spec:
+      containers:
+        - name: next-cv-worker
+          image: my-registry/next-cv-worker:latest # Replace with real image built from worker.Dockerfile
+          imagePullPolicy: Always
+          command: ["npm", "run", "worker"]
+          workingDir: /app
+          env:
+            - name: SQLITE_PATH
+              value: "/data/cv.db"
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: next-cv-secrets
+                  key: OPENAI_API_KEY
+            - name: JOBS_AUTO_APPLY
+              value: "true"
+          volumeMounts:
+            - name: cv-data
+              mountPath: /data
+      volumes:
+        - name: cv-data
+          persistentVolumeClaim:
+            claimName: cv-data-pvc

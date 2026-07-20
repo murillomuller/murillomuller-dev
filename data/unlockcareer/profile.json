@@ -1,0 +1,33 @@
+{
+  "firstName": "Murillo",
+  "lastName": "Müller",
+  "email": "murillosmf@hotmail.com",
+  "country": "Brazil",
+  "countryCode": "BR",
+  "city": "Londrina",
+  "state": "Paraná",
+  "stateCode": "PR",
+  "location": "Londrina, Paraná, Brazil",
+  "hybrid": {
+    "city": "São Paulo",
+    "frequency": "occasional",
+    "note": "Open to hybrid in São Paulo a few times when needed"
+  },
+  "phoneCountryDial": "+55",
+  "phone": "61999948728",
+  "phoneFull": "5561999948728",
+  "linkedin": "https://www.linkedin.com/in/murillomuller/",
+  "github": "https://github.com/murillomuller",
+  "cvPath": "data/unlockcareer/Murillo_Muller_CV_en.pdf",
+  "englishProficiency": "upper_intermediate_b2",
+  "englishProficiencyLabel": "Upper Intermediate (B2)",
+  "availability": "immediately",
+  "availabilityLabel": "Immediate",
+  "expectedRateUsd": 55600,
+  "notes": {
+    "english": "CV lists Intermediate; B2 fits remote work with UK teams. Confirm before each apply.",
+    "availability": "Immediate — confirmed by user.",
+    "phone": "Saved from user: +55 61 99994-8728",
+    "location": "Based in Londrina, PR. Occasional hybrid in São Paulo OK."
+  }
+}

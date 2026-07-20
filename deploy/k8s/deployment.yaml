@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: next-cv
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: next-cv
+  template:
+    metadata:
+      labels:
+        app: next-cv
+    spec:
+      containers:
+        - name: next-cv
+          image: my-registry/next-cv:latest # Replace with real image
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: SQLITE_PATH
+              value: "/data/cv.db"
+            - name: AUTH_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: next-cv-secrets
+                  key: AUTH_SECRET
+            - name: ADMIN_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: next-cv-secrets
+                  key: ADMIN_EMAIL
+            - name: ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: next-cv-secrets
+                  key: ADMIN_PASSWORD
+          volumeMounts:
+            - name: cv-data
+              mountPath: /data
+      volumes:
+        - name: cv-data
+          persistentVolumeClaim:
+            claimName: cv-data-pvc
