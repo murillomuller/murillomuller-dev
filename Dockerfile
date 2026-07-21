@@ -1,12 +1,46 @@
 FROM node:22-bookworm-slim AS base
 
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+ENV HOME=/home/nextjs
+
+# Runtime libraries required by Playwright/Chromium on Debian slim.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    fonts-liberation \
+    libasound2 \
+    libatk-bridge2.0-0 \
+    libatk1.0-0 \
+    libcairo2 \
+    libcups2 \
+    libdbus-1-3 \
+    libdrm2 \
+    libexpat1 \
+    libgbm1 \
+    libglib2.0-0 \
+    libgtk-3-0 \
+    libnspr4 \
+    libnss3 \
+    libpango-1.0-0 \
+    libx11-6 \
+    libx11-xcb1 \
+    libxcb1 \
+    libxcomposite1 \
+    libxdamage1 \
+    libxext6 \
+    libxfixes3 \
+    libxkbcommon0 \
+    libxrandr2 \
+    wget \
+    xdg-utils \
+  && rm -rf /var/lib/apt/lists/*
+
 # Install dependencies only when needed
 FROM base AS deps
 WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json package-lock.json* ./
-RUN npm ci && npm ls react react-dom
+RUN npm ci && npm ls react react-dom && npx playwright install chromium
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -40,6 +74,17 @@ RUN chown nextjs:nodejs .next
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+# Keep the TypeScript worker/login CLIs available in the production image.
+COPY --from=deps --chown=nextjs:nodejs /app/node_modules ./node_modules
+COPY --from=deps --chown=nextjs:nodejs /ms-playwright /ms-playwright
+COPY --from=builder --chown=nextjs:nodejs /app/package.json ./package.json
+COPY --from=builder --chown=nextjs:nodejs /app/src ./src
+COPY --from=builder --chown=nextjs:nodejs /app/scripts ./scripts
+COPY --from=builder --chown=nextjs:nodejs /app/drizzle ./drizzle
+
+RUN mkdir -p /home/nextjs /app/data /app/.secrets \
+  && chown -R nextjs:nodejs /home/nextjs /app/data /app/.secrets /ms-playwright
 
 USER nextjs
 
