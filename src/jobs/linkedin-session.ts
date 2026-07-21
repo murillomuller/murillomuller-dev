@@ -50,6 +50,41 @@ function isAuthWallUrl(url: string) {
   );
 }
 
+function isNavigationContextError(error: unknown) {
+  const message = error instanceof Error ? error.message : String(error);
+  return (
+    message.includes('Execution context was destroyed') ||
+    message.includes('Cannot find context with specified id') ||
+    message.includes('Target closed') ||
+    message.includes('Frame was detached')
+  );
+}
+
+async function waitForNavigationToSettle(page: Page, timeout = 5000) {
+  await page.waitForLoadState('domcontentloaded', { timeout }).catch(() => undefined);
+  await page.waitForLoadState('networkidle', { timeout }).catch(() => undefined);
+}
+
+async function hasVisibleLoginForm(page: Page): Promise<boolean> {
+  try {
+    await waitForNavigationToSettle(page, 3000);
+    const loginFields = page.locator(
+      'input[type="password"], input[type="email"], input[name="session_key"], #username, input[autocomplete="current-password"]'
+    );
+    const count = await loginFields.count();
+
+    for (let index = 0; index < count; index++) {
+      const field = loginFields.nth(index);
+      if (await field.isVisible().catch(() => false)) return true;
+    }
+
+    return count > 0;
+  } catch (error: unknown) {
+    if (isNavigationContextError(error)) return false;
+    throw error;
+  }
+}
+
 export async function saveStorageStateFromCookies(liAt: string, jsessionid?: string) {
   const statePath = getLinkedInStatePath();
   const dir = path.dirname(statePath);
@@ -136,8 +171,7 @@ async function waitForLoginSuccess(page: Page, timeoutMs = 180_000): Promise<'ok
     }
 
     if (url.includes('/login') || url.includes('/uas/login') || url.includes('/flagship-web/login')) {
-      const hasLoginForm = !!(await page.$('input[type="password"], input[type="email"]'));
-      if (hasLoginForm) return 'failed';
+      if (await hasVisibleLoginForm(page)) return 'failed';
     }
 
     await sleep(2000);
@@ -160,7 +194,7 @@ export async function validateLinkedInSession(): Promise<{ ok: boolean; message:
     await sleep(2500);
 
     const url = page.url();
-    if (isAuthWallUrl(url) || !!(await page.$('input[name="session_key"], #username'))) {
+    if (isAuthWallUrl(url) || (await hasVisibleLoginForm(page))) {
       return { ok: false, message: 'Sessão inválida ou expirada. Conecte novamente.' };
     }
 
@@ -214,7 +248,8 @@ export async function loginLinkedInWithCredentials(
       submit.click({ force: true }),
       page.waitForLoadState('domcontentloaded').catch(() => undefined),
     ]);
-    await sleep(3000);
+    await waitForNavigationToSettle(page, 10000);
+    await sleep(1000);
 
     let url = page.url();
 
@@ -238,9 +273,7 @@ export async function loginLinkedInWithCredentials(
       }
     } else {
       // Still on login? Check for visible email/password fields again
-      const stillLogin =
-        url.includes('/login') &&
-        !!(await page.locator('input[type="password"], input[autocomplete="current-password"]').count());
+      const stillLogin = url.includes('/login') && (await hasVisibleLoginForm(page));
       if (stillLogin && !(url.includes('/checkpoint') || url.includes('/challenge'))) {
         // Maybe slow redirect — wait a bit more for checkpoint/feed
         const result = await waitForLoginSuccess(page, 60_000);
