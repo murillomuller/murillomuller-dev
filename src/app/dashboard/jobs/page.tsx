@@ -1,12 +1,15 @@
 import { db } from '@/db';
 import { applications, jobSearchPrefs, jobs, skills } from '@/db/schema';
 import { ManualJobSearchClient } from '@/components/dashboard/ManualJobSearchClient';
+import { WorkerControlClient } from '@/components/dashboard/WorkerControlClient';
+import { getWorkerStatus } from '@/jobs/worker-control';
 import { parseFitReasons } from '@/jobs/ai/matcher';
 import { asc, desc, eq } from 'drizzle-orm';
 
 export default async function JobsDashboardPage() {
   const prefs = await db.select().from(jobSearchPrefs).limit(1).then((r) => r[0]);
   const skillRows = await db.select({ name: skills.name }).from(skills).orderBy(asc(skills.sortOrder)).limit(12);
+  const workerStatus = await getWorkerStatus();
 
   const rows = await db
     .select({
@@ -46,6 +49,7 @@ export default async function JobsDashboardPage() {
 
   return (
     <div className="space-y-6">
+      <WorkerControlClient initialStatus={workerStatus} />
       <ManualJobSearchClient
         initialJobs={initialJobs}
         defaultKeywords={prefs?.keywords || 'Frontend Engineer, React, Next.js, TypeScript'}
