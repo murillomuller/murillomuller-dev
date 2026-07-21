@@ -6,8 +6,16 @@ import { linkedinSession } from '@/db/schema';
 import { eq } from 'drizzle-orm';
 
 export function getLinkedInStatePath(): string {
-  const configured = process.env.LINKEDIN_STATE_PATH || '.linkedin_state.json';
-  return path.isAbsolute(configured) ? configured : path.join(process.cwd(), configured);
+  const configured = process.env.LINKEDIN_STATE_PATH;
+  if (configured) return path.isAbsolute(configured) ? configured : path.join(process.cwd(), configured);
+
+  const sqlitePath = process.env.SQLITE_PATH;
+  if (sqlitePath) {
+    const sqliteDir = path.dirname(path.isAbsolute(sqlitePath) ? sqlitePath : path.join(process.cwd(), sqlitePath));
+    return path.join(sqliteDir, '.linkedin_state.json');
+  }
+
+  return path.join(process.cwd(), 'data', '.linkedin_state.json');
 }
 
 export function hasLinkedInSessionFile(): boolean {
